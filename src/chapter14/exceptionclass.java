@@ -15,7 +15,7 @@ class MeroException extends  Exception{
 }
 
 public class exceptionclass {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws MeroException{
         int a = 8;
         Scanner scanner = new Scanner(System.in);
         a = scanner.nextInt();
