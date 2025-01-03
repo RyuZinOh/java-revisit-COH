@@ -22,6 +22,8 @@ public class Ll_collectionframework {
         }
         System.out.println("null");
 
+
+
         //deleting is bydefault removing frist
         list.removeLast();
         for(String element : list){

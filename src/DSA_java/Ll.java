@@ -92,4 +92,35 @@ public class Ll {
     public int getSize() {
         return size;
     }
+
+    public void reverseIterate(){
+        if(head == null || head.next == null){
+            return;
+        }
+        Node previousNode = head;
+        Node currentNode = head.next;
+        while(currentNode!=null){
+            Node nextNode = currentNode.next;
+            currentNode.next = previousNode;
+            //updating
+            previousNode = currentNode;
+            currentNode = nextNode;
+        }
+        head.next = null;
+        head = previousNode;
+    }
+
+
+
+
+
+    public Node reverserecusrion(Node head){
+        if(head == null || head.next == null){
+            return  head;
+        }
+        Node newHead = reverserecusrion(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
 }

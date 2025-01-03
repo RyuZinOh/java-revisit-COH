@@ -7,6 +7,10 @@ public class linkedlist_main {
         list.addFirst("is");
         list.addLAst("good?");
         list.printList();
+        list.reverseIterate();
+        list.printList();
+      list.head =  list.reverserecusrion(list.head);
+        list.printList();
         System.out.println(list.getSize());
         list.deleteFirst();
         list.printList();
